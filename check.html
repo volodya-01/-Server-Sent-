@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+var gettype = Object.prototype.toString;
+console.log(gettype.call(123))
+var reg=(/[^\d]/g,'');
+
+var r=reg.exec('a1b2c3');
+
+console.log(r); //2
+/* gettype.call('aaaa') 输出 [object String]
+
+gettype.call(2222) 输出 [object Number]
+
+gettype.call(true) 输出 [object Boolean]
+
+gettype.call(undefined) 输出 [object Undefined]
+
+gettype.call(null) 输出 [object Null]
+
+gettype.call({}) 输出 [object Object]
+
+gettype.call([]) 输出 [object Array]
+gettype.call(function(){}) 输出 [object Function] */
+  
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

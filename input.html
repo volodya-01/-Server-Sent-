@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>正则表单验证</title>
+<link rel="stylesheet" href="">
+</head>
+<body>
+<p>
+只允许输入数字
+<input type="text" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" >
+<input type="text" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
+</p>
+
+<p>
+只允许输入字母
+<input type="text" onkeyup="value=value.replace(/[^A-Za-z]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^A-Za-z]/g,''))" >
+<input type="text" onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'')">
+</p>
+
+<p>
+只允许输入汉字
+<input type="text" onkeyup="value=value.replace(/[^\u4e00-\u9fa5]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\u4e00-\u9fa5]/g,''))" >
+<input type="text" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')">
+</p>
+
+<p>
+只能输入数字和字母
+<input type="text" onkeyup="value=value.replace(/[\W]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[\W]/g,''))" >
+<input type="text" onKeyUp="value=value.replace(/[\W]/g,'')">
+</p>
+
+<p>
+只能输入email格式的数据(字母 数字 - _ @)
+<input type="text" onkeyup="value=value.replace(/[^a-zA-Z\-_@\.0-9]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^a-zA-Z\-_@\.0-9]/g,''))" >
+<input type="text" onKeyUp="value=value.replace(/[^a-zA-Z\-_@\.0-9]/g,'')">
+</p>
+<p>
+只允许输入数字和字母和汉字
+<input type="text" onkeyup="value=value.replace(/[^\w\u4E00-\u9FA5]/g, '')">
+
+</body>
+</html>

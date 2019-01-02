@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+#mycanvas{
+    color: red
+}
+    </style>
+</head>
+<body>
+<canvas id="mycanvas" width="300" height="200" style="border:1px #000 solid">您的浏览器不支持 HTML5 canvas 标签。</canvas>
+    <script>
+        var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+ctx.fillStyle="#FF0000";
+ctx.fillRect(0,0,150,75);
+/* var c=document.getElementById("mycanvas")
+var ctx=c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(300,200);
+ctx.stroke() */
+/* var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke(); */
+/* var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+ctx.font="30px Arial";
+ctx.fillText("Hello World",10,50); */
+/* var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+ctx.font="30px DIGIFAW";
+ctx.strokeText("18:23:00",10,50); */
+/* var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d"); */
+
+// 创建渐变
+/* var grd=ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white"); */
+
+// 填充渐变
+/* ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80); */
+
+/* var c=document.getElementBy */Id("mycanvas");
+/* var ctx=c.getContext("2d"); */
+
+// 创建渐变
+/* var grd=ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white"); */
+
+// 填充渐变
+/* ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80); */
+
+    </script>
+</body>
+</html>

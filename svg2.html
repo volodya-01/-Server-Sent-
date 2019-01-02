@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+.outbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+/*     justify-content: flex-start;
+    align-items: flex-start; */
+    width:1000px;
+    height: 600px;
+    /* background-color: rgb(196, 160, 160,0.6); */
+    margin: 60px 500px
+}
+.inbox1{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-end;
+align-items: flex-start;
+width:498px;
+height: 600px;
+border: 1px green solid;
+}
+.inbox2{
+width:498px;
+height: 600px;
+border: 1px rgb(49, 0, 128) solid;
+}
+    </style>
+</head>
+<body>
+<div class="outbox">
+    <div class="inbox1">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" style="background-color: rgba(160, 196, 166, 0.6);"
+  version="1.1">
+<circle cx="40" cy="40" r="40" stroke="black" stroke-width="2" fill="red" />
+</svg>
+    </div>
+<div class="inbox2">
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="150" style="background-color: rgb(196, 160, 160,0.6);"
+  version="1.1">
+<rect x="50" y="50" width="450" height="100" style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+</svg>
+</div>
+</div>
+
+
+</body>
+</html>
